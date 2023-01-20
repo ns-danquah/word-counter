@@ -12,7 +12,7 @@ def upload_file():
     global filename
     global file_extension
     filename = filedialog.askopenfilename()
-    file_name, file_extension = os.path.splitext(filename)
+    _, file_extension = os.path.splitext(filename)
 
 
 # Deletes entry boxes
